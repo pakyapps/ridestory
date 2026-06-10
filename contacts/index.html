@@ -71,23 +71,14 @@
             <textarea id="message" name="message" rows="6" maxlength="3000" required></textarea>
             <small>For technical issues, include your iPhone model, iOS version and RideStory version. Do not include passwords or payment details.</small>
           </div>
-          <div class="form-row bot-check">
-            <label for="human-check">Anti-bot check: what is 4 + 3?</label>
-            <input id="human-check" name="human_check" type="text" inputmode="numeric" pattern="7" maxlength="1" required aria-describedby="human-error">
-            <small id="human-error" data-human-error>Enter the number 7.</small>
-          </div>
           <label class="form-consent">
             <input name="privacy_consent" type="checkbox" value="accepted" required>
             <span>I have read the <a href="../privacy/">Privacy Policy</a> and agree that my message may be processed to answer my request.</span>
           </label>
           <button class="button button-light" type="submit">Send message</button>
+          <p class="captcha-note">A secure CAPTCHA verification is completed before the message is delivered.</p>
           <p class="form-status" data-form-status role="status" aria-live="polite"></p>
         </form>
-      </section>
-
-      <section class="support-note">
-        <h2>Safety first</h2>
-        <p>RideStory is not an emergency service. Do not use the app as a substitute for safe riding practices, official maps, road signs or emergency services. In an emergency, contact the local emergency number immediately.</p>
       </section>
     </main>
 
