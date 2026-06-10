@@ -7,6 +7,7 @@ The repository includes an official GitHub Pages deployment workflow. Every push
 ## URLs
 
 - Promotional website: `https://pakyapps.github.io/ridestory/`
+- App preview video: `https://pakyapps.github.io/ridestory/video/`
 - Support URL: `https://pakyapps.github.io/ridestory/contacts/`
 - FAQ: `https://pakyapps.github.io/ridestory/faq/`
 - Privacy policy: `https://pakyapps.github.io/ridestory/privacy/`
