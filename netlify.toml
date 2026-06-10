@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/contacts"
+  to = "/contacts/"
+  status = 301
+
+[[redirects]]
+  from = "/support"
+  to = "/contacts/"
+  status = 301
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy/"
+  status = 301
