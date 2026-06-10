@@ -40,9 +40,6 @@
             <a class="button promo-button" href="#how-it-works">Explore RideStory</a>
             <a class="promo-text-link" href="contacts/">Get support <span aria-hidden="true">&rarr;</span></a>
           </div>
-          <ul class="activity-list" aria-label="Supported activities">
-            <li>Car</li><li>Motorcycle</li><li>Bike</li><li>Walking</li>
-          </ul>
         </div>
         <div class="promo-hero-media">
           <div class="phone-shot phone-shot-back"><img src="assets/media/ridestory_screenshot_iphone2.jpg" alt="RideStory session list showing distance, speed, fuel and calorie information"></div>
@@ -58,17 +55,23 @@
         </div>
         <div class="flow-grid">
           <article class="flow-card">
-            <span>01</span>
+            <div class="flow-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M8 35V18l8-8h16l8 8v17M8 23h32M14 35a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm20 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg>
+            </div>
             <h3>Track every session</h3>
             <p>Record distance, speed, average and maximum speed, route sections, location points and session time with GPS.</p>
           </article>
           <article class="flow-card">
-            <span>02</span>
+            <div class="flow-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M9 14h8l3-4h8l3 4h8v25H9V14Zm8 12a7 7 0 1 0 14 0 7 7 0 0 0-14 0Z"/><path d="M36 8v10M31 13h10"/></svg>
+            </div>
             <h3>Add the moments</h3>
             <p>Enrich the route with photos, videos, voice notes, text, weather and “Where Am I” points as you travel.</p>
           </article>
           <article class="flow-card">
-            <span>03</span>
+            <div class="flow-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M7 38h34M11 33V22h7v11m4 0V11h7v22m4 0V17h7v16"/></svg>
+            </div>
             <h3>Understand the ride</h3>
             <p>Review session details, estimated fuel cost for motor activities or calories for walking and cycling.</p>
           </article>
@@ -111,15 +114,15 @@
         </div>
         <div class="showcase-grid">
           <article class="showcase-card showcase-card-tall">
-            <img src="assets/media/ridestory_screenshot_iphone4.jpg" alt="RideStory Home Screen widgets for speed, distance, fuel cost and current location" loading="lazy">
+            <div class="showcase-image showcase-image-phone"><img src="assets/media/ridestory_screenshot_iphone4.jpg" alt="RideStory Home Screen widgets for speed, distance, fuel cost and current location" loading="lazy"></div>
             <div><h3>Widgets &amp; Live Activities</h3><p>See speed, distance, averages, route sections, fuel cost, calories and current location from supported iOS surfaces.</p></div>
           </article>
           <article class="showcase-card showcase-card-wide">
-            <img src="assets/media/ridestory_screenshot_CARPLAY1.jpg" alt="RideStory information widgets displayed in CarPlay" loading="lazy">
+            <div class="showcase-image showcase-image-carplay"><img src="assets/media/ridestory_screenshot_CARPLAY1.jpg" alt="RideStory information widgets displayed in CarPlay" loading="lazy"></div>
             <div><h3>CarPlay information</h3><p>Monitor real-time data and use voice information while keeping interaction focused.</p></div>
           </article>
           <article class="showcase-card showcase-card-wide">
-            <img src="assets/media/ridestory_screenshot_CARPLAY2.jpg" alt="RideStory Live Activity speedometer beside a CarPlay map" loading="lazy">
+            <div class="showcase-image showcase-image-carplay"><img src="assets/media/ridestory_screenshot_CARPLAY2.jpg" alt="RideStory Live Activity speedometer beside a CarPlay map" loading="lazy"></div>
             <div><h3>Live session speedometer</h3><p>Keep current speed and essential session information visible during an active route.</p></div>
           </article>
         </div>
@@ -131,14 +134,14 @@
           <p class="eyebrow">Technical features</p>
           <h2>Made for every kind of route.</h2>
         </div>
-        <div class="technical-grid">
-          <p>GPS tracking for car, motorcycle, bike and walking</p>
-          <p>Ride, Story and Real-style interactive replay modes</p>
-          <p>Shareable video, GPX and complete session export</p>
-          <p>Photos, videos, voice notes, text and location points</p>
-          <p>Fuel cost and calorie estimation by activity</p>
-          <p>Kilometres, miles and localised voice feedback</p>
-        </div>
+        <ul class="technical-list">
+          <li>GPS tracking for car, motorcycle, bike and walking</li>
+          <li>Ride, Story and Real-style interactive replay modes</li>
+          <li>Shareable video, GPX and complete session export</li>
+          <li>Photos, videos, voice notes, text and location points</li>
+          <li>Fuel cost and calorie estimation by activity</li>
+          <li>Kilometres, miles and localised voice feedback</li>
+        </ul>
       </section>
 
       <section class="safety-section">
