@@ -3,95 +3,164 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="RideStory turns every ride into a story worth keeping.">
-    <meta name="theme-color" content="#f3f0e8">
-    <meta property="og:title" content="RideStory — Every ride has a story">
-    <meta property="og:description" content="Capture the route, remember the moments and keep every ride together.">
+    <meta name="description" content="RideStory records GPS routes and turns every drive, ride, walk or bike session into a visual story you can replay and share.">
+    <meta name="theme-color" content="#07132f">
+    <meta property="og:title" content="RideStory — Track it. Replay it. Share the story.">
+    <meta property="og:description" content="GPS tracking, interactive route replay, video and GPX export, widgets and CarPlay tools.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pakyapps.github.io/ridestory/">
-    <title>RideStory — Every ride has a story</title>
+    <title>RideStory — GPS routes become visual stories</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/site.js" defer></script>
   </head>
-  <body>
+  <body class="promo-page">
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <a class="brand" href="./" aria-label="RideStory home">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span>RideStory</span>
-      </a>
+    <header class="site-header promo-header">
+      <a class="brand brand-logo" href="./" aria-label="RideStory home"><img src="assets/media/logo.png" alt="RideStory"></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         <a aria-current="page" href="./">Home</a>
+        <a href="#features">Features</a>
         <a href="contacts/">Support</a>
         <a href="privacy/">Privacy</a>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Your road. Your moments.</p>
-          <h1>Every ride has<br>a story.</h1>
-          <p class="hero-lede">RideStory helps you capture the route, remember the moments and keep every journey in one beautiful place.</p>
+      <section class="promo-hero">
+        <div class="promo-glow promo-glow-one"></div>
+        <div class="promo-glow promo-glow-two"></div>
+        <div class="promo-hero-copy">
+          <p class="eyebrow">GPS tracking &amp; route storytelling</p>
+          <h1>Track it.<br>Replay it.<br><span>Share the story.</span></h1>
+          <p>RideStory records your route by car, motorcycle, bike or on foot, then turns every session into a visual story you can relive and share.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#discover">Discover RideStory</a>
-            <a class="text-link" href="contacts/">Get support <span aria-hidden="true">&rarr;</span></a>
+            <a class="button promo-button" href="#how-it-works">Explore RideStory</a>
+            <a class="promo-text-link" href="contacts/">Get support <span aria-hidden="true">&rarr;</span></a>
           </div>
+          <ul class="activity-list" aria-label="Supported activities">
+            <li>Car</li><li>Motorcycle</li><li>Bike</li><li>Walking</li>
+          </ul>
         </div>
-        <div class="hero-visual" aria-label="An abstract winding route through a landscape">
-          <div class="sun"></div>
-          <div class="land land-back"></div>
-          <div class="land land-front"></div>
-          <svg class="route-line" viewBox="0 0 560 680" role="img" aria-label="A winding road">
-            <path d="M422 702 C430 590 169 583 220 465 C263 365 442 404 410 293 C385 209 198 258 202 142 C205 76 281 48 317 -16"/>
-          </svg>
-          <div class="route-dot route-dot-one"></div>
-          <div class="route-dot route-dot-two"></div>
-          <p class="visual-caption"><span>42.8 km</span> worth remembering</p>
+        <div class="promo-hero-media">
+          <div class="phone-shot phone-shot-back"><img src="assets/media/ridestory_screenshot_iphone2.jpg" alt="RideStory session list showing distance, speed, fuel and calorie information"></div>
+          <div class="phone-shot phone-shot-front"><img src="assets/media/ridestory_screenshot_iphone1.jpg" alt="RideStory GPS tracking dashboard with map, speed and route controls"></div>
         </div>
       </section>
 
-      <section id="discover" class="feature-section">
-        <div class="section-heading">
-          <p class="eyebrow">Made for the journey</p>
-          <h2>More than a line on a map.</h2>
-          <p>A ride is made of places, people and small moments. RideStory keeps the whole experience together.</p>
+      <section id="how-it-works" class="story-flow">
+        <div class="promo-section-heading">
+          <p class="eyebrow">From route to story</p>
+          <h2>Everything that happened along the way.</h2>
+          <p>Record the journey, attach the moments that made it yours, and return to the complete experience whenever you want.</p>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="feature-number">01</span>
-            <h3>Remember the route</h3>
-            <p>Keep the shape of every journey and return to the roads that mattered.</p>
+        <div class="flow-grid">
+          <article class="flow-card">
+            <span>01</span>
+            <h3>Track every session</h3>
+            <p>Record distance, speed, average and maximum speed, route sections, location points and session time with GPS.</p>
           </article>
-          <article class="feature-card feature-card-dark">
-            <span class="feature-number">02</span>
-            <h3>Save the moments</h3>
-            <p>Bring the details of your day together so the memory lasts beyond the finish.</p>
+          <article class="flow-card">
+            <span>02</span>
+            <h3>Add the moments</h3>
+            <p>Enrich the route with photos, videos, voice notes, text, weather and “Where Am I” points as you travel.</p>
           </article>
-          <article class="feature-card">
-            <span class="feature-number">03</span>
-            <h3>Tell your story</h3>
-            <p>Turn a completed ride into something personal, clear and easy to revisit.</p>
+          <article class="flow-card">
+            <span>03</span>
+            <h3>Understand the ride</h3>
+            <p>Review session details, estimated fuel cost for motor activities or calories for walking and cycling.</p>
           </article>
         </div>
       </section>
 
-      <section class="quote-section">
-        <p class="eyebrow">Ride. Remember. Repeat.</p>
-        <blockquote>“The best journeys don’t end when you arrive.”</blockquote>
-        <a class="button button-light" href="contacts/">Questions? We’re here to help</a>
+      <section class="split-feature replay-feature">
+        <div class="feature-image feature-image-phone">
+          <img src="assets/media/ridestory_screenshot_iphone3.jpg" alt="RideStory interactive map replay with photos, video, weather and text along the route" loading="lazy">
+        </div>
+        <div class="feature-copy">
+          <p class="eyebrow">Interactive replay</p>
+          <h2>Relive the route your way.</h2>
+          <p>Follow the path again through an interactive map replay. Choose Ride, Story or Real-style modes, focus on a specific section and control how the story unfolds.</p>
+          <ul class="check-list">
+            <li>Custom replay speed and route section selection</li>
+            <li>Map styles, titles, effects, filters and music</li>
+            <li>Content appears where it was captured</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="split-feature split-feature-reverse creation-feature">
+        <div class="feature-image feature-image-phone">
+          <img src="assets/media/ridestory_screenshot_iphone5.jpg" alt="RideStory replay editor with visual effects, titles and background music" loading="lazy">
+        </div>
+        <div class="feature-copy">
+          <p class="eyebrow">Create and share</p>
+          <h2>Your route becomes a video.</h2>
+          <p>Record the finished replay as a shareable video, complete with the animation, route content, audio and effects you selected.</p>
+          <div class="export-pills"><span>Video export</span><span>GPX export</span><span>RideStory import/export</span></div>
+          <p class="feature-note">Move complete sessions between supported devices or export the route for compatible map and route tools.</p>
+        </div>
+      </section>
+
+      <section id="features" class="feature-showcase">
+        <div class="promo-section-heading">
+          <p class="eyebrow">The right information, at a glance</p>
+          <h2>Built beyond the main screen.</h2>
+        </div>
+        <div class="showcase-grid">
+          <article class="showcase-card showcase-card-tall">
+            <img src="assets/media/ridestory_screenshot_iphone4.jpg" alt="RideStory Home Screen widgets for speed, distance, fuel cost and current location" loading="lazy">
+            <div><h3>Widgets &amp; Live Activities</h3><p>See speed, distance, averages, route sections, fuel cost, calories and current location from supported iOS surfaces.</p></div>
+          </article>
+          <article class="showcase-card showcase-card-wide">
+            <img src="assets/media/ridestory_screenshot_CARPLAY1.jpg" alt="RideStory information widgets displayed in CarPlay" loading="lazy">
+            <div><h3>CarPlay information</h3><p>Monitor real-time data and use voice information while keeping interaction focused.</p></div>
+          </article>
+          <article class="showcase-card showcase-card-wide">
+            <img src="assets/media/ridestory_screenshot_CARPLAY2.jpg" alt="RideStory Live Activity speedometer beside a CarPlay map" loading="lazy">
+            <div><h3>Live session speedometer</h3><p>Keep current speed and essential session information visible during an active route.</p></div>
+          </article>
+        </div>
+        <p class="carplay-note"><strong>CarPlay note:</strong> RideStory must remain in the foreground with the iPhone screen active for CarPlay widget use.</p>
+      </section>
+
+      <section class="technical-section">
+        <div class="technical-heading">
+          <p class="eyebrow">Technical features</p>
+          <h2>Made for every kind of route.</h2>
+        </div>
+        <div class="technical-grid">
+          <p>GPS tracking for car, motorcycle, bike and walking</p>
+          <p>Ride, Story and Real-style interactive replay modes</p>
+          <p>Shareable video, GPX and complete session export</p>
+          <p>Photos, videos, voice notes, text and location points</p>
+          <p>Fuel cost and calorie estimation by activity</p>
+          <p>Kilometres, miles and localised voice feedback</p>
+        </div>
+      </section>
+
+      <section class="safety-section">
+        <div class="safety-icon" aria-hidden="true">!</div>
+        <div>
+          <p class="eyebrow">Important safety note</p>
+          <h2>Keep your attention on the road.</h2>
+          <p>RideStory includes a screen protection mode designed to reduce distractions and preserve battery while tracking. Above a certain speed, the driving protection screen activates automatically. Stop in a safe place before adding photos, videos, voice notes or text to your route.</p>
+        </div>
+      </section>
+
+      <section class="promo-cta">
+        <img src="assets/media/logo.png" alt="RideStory" loading="lazy">
+        <h2>Every route has more to tell.</h2>
+        <p>Track the session. Keep the moments. Replay the whole story.</p>
+        <a class="button promo-button" href="contacts/">Visit RideStory support</a>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <a class="brand brand-footer" href="./"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>RideStory</span></a>
-      <p>Every ride has a story.</p>
-      <nav aria-label="Footer navigation">
-        <a href="contacts/">Support &amp; contact</a>
-        <a href="privacy/">Privacy policy</a>
-      </nav>
+    <footer class="site-footer promo-footer">
+      <a class="brand brand-logo brand-footer" href="./"><img src="assets/media/logo.png" alt="RideStory"></a>
+      <p>GPS routes become visual stories.</p>
+      <nav aria-label="Footer navigation"><a href="contacts/">Support &amp; contact</a><a href="privacy/">Privacy policy</a></nav>
       <p class="copyright">&copy; <span data-current-year>2026</span> RideStory. All rights reserved.</p>
     </footer>
   </body>

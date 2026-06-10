@@ -29,5 +29,6 @@ npm run check
 1. Replace `77pask@gmail.com` with dedicated support and privacy mailboxes when available.
 2. Replace “RideStory” in the privacy controller paragraph with the legal company name and add its registered postal address. This is important for GDPR and UK GDPR transparency.
 3. Compare the policy’s data categories with the final app and App Store privacy questionnaire. Remove categories the app does not collect and add any missing SDKs or processing.
-4. Confirm the app’s actual minimum age and account deletion flow.
+4. Confirm the app’s actual minimum age and that the privacy policy matches every SDK and permission in the shipping build.
+5. Submit the contact form once and activate the FormSubmit destination from the confirmation message before giving the URL to App Review.
 5. Point the `ridestory.com` domain to the chosen static host. Netlify and Vercel configuration files are included.

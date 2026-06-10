@@ -13,7 +13,7 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="../" aria-label="RideStory home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>RideStory</span></a>
+      <a class="brand brand-logo" href="../" aria-label="RideStory home"><img src="../assets/media/logo.png" alt="RideStory"></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         <a href="../">Home</a>
@@ -27,21 +27,61 @@
         <div>
           <p class="eyebrow">RideStory support</p>
           <h1>How can we help?</h1>
-          <p>Questions, technical issues or privacy requests: reach the RideStory team directly. We normally reply within two business days.</p>
+          <p>Questions, technical issues or privacy requests: send a message directly to the RideStory team. We normally reply within two business days.</p>
         </div>
-        <a class="button button-primary" href="mailto:77pask@gmail.com?subject=RideStory%20support%20request">Email support</a>
+        <a class="button button-primary" href="#contact-form">Contact support</a>
       </section>
 
       <section class="contact-panel" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">Direct contact</p>
           <h2 id="contact-title">Support that reaches a person.</h2>
+          <p>Available worldwide, including the United Kingdom. You can write in English or Italian.</p>
         </div>
-        <div class="contact-details">
-          <p class="contact-label">Email</p>
-          <a class="contact-email" href="mailto:77pask@gmail.com?subject=RideStory%20support%20request">77pask@gmail.com</a>
-          <p>Available worldwide, including the United Kingdom. Please write in English or Italian and include the device model, iOS version and app version when reporting a technical issue. Do not include passwords or payment card details.</p>
-        </div>
+        <form id="contact-form" class="contact-form" action="https://formsubmit.co/77pask@gmail.com" method="POST" data-contact-form>
+          <input type="hidden" name="_subject" value="New RideStory support request">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_next" value="https://pakyapps.github.io/ridestory/contacts/?sent=1">
+          <div class="form-honey" aria-hidden="true">
+            <label for="website">Leave this field empty</label>
+            <input id="website" name="_honey" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="160" required>
+          </div>
+          <div class="form-row">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+              <option value="">Choose a topic</option>
+              <option>Technical support</option>
+              <option>Privacy request</option>
+              <option>Feedback</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" maxlength="3000" required></textarea>
+            <small>For technical issues, include your iPhone model, iOS version and RideStory version. Do not include passwords or payment details.</small>
+          </div>
+          <div class="form-row bot-check">
+            <label for="human-check">Anti-bot check: what is 4 + 3?</label>
+            <input id="human-check" name="human_check" type="text" inputmode="numeric" pattern="7" maxlength="1" required aria-describedby="human-error">
+            <small id="human-error" data-human-error>Enter the number 7.</small>
+          </div>
+          <label class="form-consent">
+            <input name="privacy_consent" type="checkbox" value="accepted" required>
+            <span>I have read the <a href="../privacy/">Privacy Policy</a> and agree that my message may be processed to answer my request.</span>
+          </label>
+          <button class="button button-light" type="submit">Send message</button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
       </section>
 
       <section class="faq-section" aria-labelledby="faq-title">
@@ -51,24 +91,44 @@
         </div>
         <div class="faq-list">
           <details>
-            <summary>The app is not working as expected. What should I send?</summary>
-            <p>Email us a short description of what happened, the steps that led to it, your iPhone model, iOS version and RideStory app version. A screenshot is helpful when it does not contain sensitive information.</p>
+            <summary>1. What is RideStory?</summary>
+            <p>RideStory records your routes using GPS and lets you relive them through animated replays enriched with photos, videos, voice notes, text and session information.</p>
           </details>
           <details>
-            <summary>How do I manage location or photo access?</summary>
-            <p>Open iPhone Settings, select Privacy &amp; Security, choose the relevant permission and update RideStory’s access. Some app features may not work when a required permission is disabled.</p>
+            <summary>2. Which activities can I record?</summary>
+            <p>You can choose car, motorcycle, bicycle or walking. Speedometers, summaries, fuel information and calorie estimates adapt automatically to the selected activity.</p>
           </details>
           <details>
-            <summary>How do I request access to or deletion of my data?</summary>
-            <p>Email <a href="mailto:77pask@gmail.com?subject=RideStory%20privacy%20request">77pask@gmail.com</a> from the address associated with your account and state whether you want access, correction or deletion. We may ask for limited information to verify the request.</p>
+            <summary>3. Does RideStory keep recording when the screen is off?</summary>
+            <p>Yes. During an active session, the route can continue to be recorded in the background or while the screen is in standby, provided the necessary location permissions are enabled.</p>
           </details>
           <details>
-            <summary>How do I delete my RideStory account?</summary>
-            <p>Use the account deletion option inside the app, if available, or email <a href="mailto:77pask@gmail.com?subject=Delete%20my%20RideStory%20account">77pask@gmail.com</a> with the subject “Delete my RideStory account”. Account data will be deleted or anonymised, except where retention is required by law or needed to resolve security and fraud matters.</p>
+            <summary>4. Can I add content during a route?</summary>
+            <p>Yes. During an active session you can add photos, videos, voice notes, text and weather information. For safety, content cannot be added while the session is paused.</p>
           </details>
           <details>
-            <summary>Can I get support from the United Kingdom?</summary>
-            <p>Yes. RideStory support is available to UK users. UK privacy requests are handled under the UK GDPR and Data Protection Act 2018 as described in our <a href="../privacy/#uk-users">Privacy Policy</a>.</p>
+            <summary>5. How do replays work?</summary>
+            <p>A replay reconstructs your route on the map and plays each piece of content where it was recorded. Choose Ride, Story or Real mode and customise speed, map, effects, titles, music and other elements.</p>
+          </details>
+          <details>
+            <summary>6. Can I share a replay as a video?</summary>
+            <p>Yes. RideStory can record the replay and create a shareable video with the animations, content, audio and effects you configured.</p>
+          </details>
+          <details>
+            <summary>7. Does RideStory calculate fuel use and calories?</summary>
+            <p>For car and motorcycle sessions, RideStory estimates fuel consumption and cost using vehicle data. For walking and bicycle sessions, it estimates calories in real time using weight, speed, duration and elevation.</p>
+          </details>
+          <details>
+            <summary>8. Can I export or import routes?</summary>
+            <p>Yes. You can export complete sessions in RideStory format and routes in compatible formats such as GPX. Supported sessions and routes can also be imported for storage or review.</p>
+          </details>
+          <details>
+            <summary>9. What are widgets and Live Activities for?</summary>
+            <p>They provide quick access to speed, distance, duration, summaries, fuel information or calories. Some widgets include shortcuts to start a session, add a route section or hear your current location.</p>
+          </details>
+          <details>
+            <summary>10. How does RideStory help protect the user while driving?</summary>
+            <p>Above a certain speed, RideStory activates a protection screen designed to reduce distractions. Stop in a safe place before interacting with the app or adding content.</p>
           </details>
         </div>
       </section>
@@ -80,7 +140,7 @@
     </main>
 
     <footer class="site-footer">
-      <a class="brand brand-footer" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>RideStory</span></a>
+      <a class="brand brand-logo brand-footer" href="../"><img src="../assets/media/logo.png" alt="RideStory"></a>
       <p>Official RideStory support.</p>
       <nav aria-label="Footer navigation"><a href="../">Home</a><a href="../privacy/">Privacy policy</a></nav>
       <p class="copyright">&copy; <span data-current-year>2026</span> RideStory. All rights reserved.</p>
