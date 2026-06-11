@@ -279,9 +279,11 @@ th { color: var(--ink); background: var(--paper-deep); }
 .video-intro .button { margin-top: 28px; }
 .video-intro > p:last-child { max-width: 720px; margin: 28px auto 0; color: rgba(255,255,255,.66); font-size: 1.12rem; }
 .video-stage { position: relative; padding: 30px 24px 120px; text-align: center; }
-.video-glow { position: absolute; left: 50%; top: 42%; width: 540px; height: 540px; transform: translate(-50%,-50%); background: #3532ad; border-radius: 50%; filter: blur(130px); opacity: .44; pointer-events: none; }
-.video-frame { position: relative; width: min(390px, 100%); margin: 0 auto; padding: 10px; background: linear-gradient(145deg, rgba(255,255,255,.25), rgba(255,255,255,.05)); border: 1px solid rgba(255,255,255,.18); border-radius: 38px; box-shadow: 0 45px 100px rgba(0,0,0,.5); }
-.video-frame video { display: block; width: 100%; aspect-ratio: 332 / 720; object-fit: contain; background: #020714; border-radius: 29px; }
+.video-glow { position: absolute; left: 50%; top: 45%; width: 760px; height: 540px; transform: translate(-50%,-50%); background: #3532ad; border-radius: 50%; filter: blur(150px); opacity: .38; pointer-events: none; }
+.video-grid { position: relative; width: min(1240px, 100%); margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; align-items: start; }
+.video-mode h2 { margin: 0 0 22px; color: white; font-size: clamp(2rem, 3vw, 3.25rem); line-height: 1; }
+.video-frame { position: relative; width: 100%; margin: 0 auto; padding: 8px; background: linear-gradient(145deg, rgba(255,255,255,.25), rgba(255,255,255,.05)); border: 1px solid rgba(255,255,255,.18); border-radius: 28px; box-shadow: 0 35px 80px rgba(0,0,0,.45); }
+.video-frame video { display: block; width: 100%; aspect-ratio: 1146 / 1214; object-fit: contain; background: #020714; border-radius: 21px; }
 
 @media (max-width: 800px) {
   .site-header { height: 72px; width: min(100% - 32px, 1180px); }
@@ -353,8 +355,10 @@ th { color: var(--ink); background: var(--paper-deep); }
   .video-intro { padding-top: 68px; }
   .video-intro h1 { font-size: clamp(3.2rem, 16vw, 5rem); }
   .video-stage { padding-bottom: 85px; }
-  .video-frame { width: min(330px, 100%); border-radius: 32px; }
-  .video-frame video { border-radius: 24px; }
+  .video-grid { width: min(520px, 100%); grid-template-columns: 1fr; gap: 58px; }
+  .video-mode h2 { margin-bottom: 18px; }
+  .video-frame { border-radius: 26px; }
+  .video-frame video { border-radius: 19px; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
