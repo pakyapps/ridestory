@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Watch the RideStory app preview and see GPS tracking, route replays and sharing in action.">
+    <meta name="description" content="Watch RideStory replay examples in Story, Ride and Real modes.">
     <meta name="theme-color" content="#07132f">
     <meta name="keywords" content="RideStory video, app preview, GPS route replay, video export, CarPlay, Live Activities, iPhone app, iPad app, route storytelling">
     <meta name="robots" content="index,follow">
     <meta property="og:title" content="App Preview — RideStory">
-    <meta property="og:description" content="Watch the RideStory app preview and see GPS tracking, route replays and sharing in action.">
+    <meta property="og:description" content="Watch RideStory replay examples in Story, Ride and Real modes.">
     <meta property="og:type" content="video.other">
     <meta property="og:url" content="https://pakyapps.github.io/ridestory/video/">
     <title>App Preview — RideStory</title>
@@ -18,14 +18,40 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "VideoObject",
-        "name": "RideStory app preview",
-        "description": "RideStory app preview showing GPS tracking, route replay and sharing features.",
-        "thumbnailUrl": "https://pakyapps.github.io/ridestory/assets/media/ridestory_screenshot_iphone3.jpg",
-        "contentUrl": "https://pakyapps.github.io/ridestory/assets/media/ridestory-app-preview.mp4",
-        "embedUrl": "https://pakyapps.github.io/ridestory/video/",
-        "uploadDate": "2026-06-10",
-        "duration": "PT28.9S"
+        "@type": "ItemList",
+        "name": "RideStory replay modes",
+        "itemListElement": [
+          {
+            "@type": "VideoObject",
+            "position": 1,
+            "name": "RideStory Story replay",
+            "description": "A RideStory route replay in Story mode.",
+            "thumbnailUrl": "https://pakyapps.github.io/ridestory/assets/media/ridestory-story-poster.jpg",
+            "contentUrl": "https://pakyapps.github.io/ridestory/assets/media/ridestory-story.mp4",
+            "uploadDate": "2026-06-11",
+            "duration": "PT31.27S"
+          },
+          {
+            "@type": "VideoObject",
+            "position": 2,
+            "name": "RideStory Ride replay",
+            "description": "A RideStory route replay in Ride mode.",
+            "thumbnailUrl": "https://pakyapps.github.io/ridestory/assets/media/ridestory-ride-poster.jpg",
+            "contentUrl": "https://pakyapps.github.io/ridestory/assets/media/ridestory-ride.mp4",
+            "uploadDate": "2026-06-11",
+            "duration": "PT35.27S"
+          },
+          {
+            "@type": "VideoObject",
+            "position": 3,
+            "name": "RideStory Real replay",
+            "description": "A RideStory route replay in Real mode.",
+            "thumbnailUrl": "https://pakyapps.github.io/ridestory/assets/media/ridestory-real-poster.jpg",
+            "contentUrl": "https://pakyapps.github.io/ridestory/assets/media/ridestory-real.mp4",
+            "uploadDate": "2026-06-11",
+            "duration": "PT33.38S"
+          }
+        ]
       }
     </script>
   </head>
@@ -50,13 +76,36 @@
         <a class="button promo-button" href="../">Explore RideStory</a>
       </section>
 
-      <section class="video-stage" aria-label="RideStory app preview video">
+      <section class="video-stage" aria-label="RideStory replay modes">
         <div class="video-glow"></div>
-        <div class="video-frame">
-          <video controls playsinline preload="metadata" poster="../assets/media/ridestory_screenshot_iphone3.jpg">
-            <source src="../assets/media/ridestory-app-preview.mp4" type="video/mp4">
-            Your browser does not support embedded video. <a href="../assets/media/ridestory-app-preview.mp4">Download the RideStory preview</a>.
-          </video>
+        <div class="video-grid">
+          <article class="video-mode">
+            <h2>Story</h2>
+            <div class="video-frame">
+              <video controls playsinline preload="metadata" poster="../assets/media/ridestory-story-poster.jpg">
+                <source src="../assets/media/ridestory-story.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="../assets/media/ridestory-story.mp4">Download the Story replay</a>.
+              </video>
+            </div>
+          </article>
+          <article class="video-mode">
+            <h2>Ride</h2>
+            <div class="video-frame">
+              <video controls playsinline preload="metadata" poster="../assets/media/ridestory-ride-poster.jpg">
+                <source src="../assets/media/ridestory-ride.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="../assets/media/ridestory-ride.mp4">Download the Ride replay</a>.
+              </video>
+            </div>
+          </article>
+          <article class="video-mode">
+            <h2>Real</h2>
+            <div class="video-frame">
+              <video controls playsinline preload="metadata" poster="../assets/media/ridestory-real-poster.jpg">
+                <source src="../assets/media/ridestory-real.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="../assets/media/ridestory-real.mp4">Download the Real replay</a>.
+              </video>
+            </div>
+          </article>
         </div>
       </section>
     </main>
