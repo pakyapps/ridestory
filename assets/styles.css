@@ -321,6 +321,7 @@ th { color: var(--ink); background: var(--paper-deep); }
   .footer-appstore { margin-top: 20px; align-items: center; }
   .app-store-badge img { width: 160px; }
   .brand-logo img { width: 124px; height: 50px; }
+  .brand-footer img { object-position: center; transform: translateX(-3px); }
   .promo-hero { width: 100%; min-height: auto; grid-template-columns: 1fr; }
   .promo-hero-copy { padding: 80px 24px 45px; }
   .promo-hero h1 { font-size: clamp(3.8rem, 17vw, 5.6rem); }
